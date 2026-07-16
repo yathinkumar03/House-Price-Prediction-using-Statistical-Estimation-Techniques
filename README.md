@@ -1,19 +1,21 @@
-# Credit Card Fraud Detection using Machine Learning
+# House Price Prediction using Machine Learning
 
 ## 📌 Overview
-This project focuses on detecting fraudulent credit card transactions using machine learning techniques. It includes data preprocessing, feature engineering, model training, and performance evaluation to accurately classify transactions as fraudulent or legitimate.
+This project predicts house prices using machine learning regression techniques. It involves data preprocessing, exploratory data analysis (EDA), feature engineering, model training, and performance evaluation to estimate property prices based on various housing attributes.
+
+The objective is to build an accurate predictive model that helps buyers, sellers, and real estate analysts estimate house values efficiently.
 
 ---
 
 ## 🚀 Features
-- Data preprocessing and cleaning
+- Data cleaning and preprocessing
 - Handling missing values
-- Feature encoding
-- Feature selection
-- Train-test data splitting
-- Training multiple machine learning models
-- Model performance evaluation
-- Comparison of classification algorithms
+- Exploratory Data Analysis (EDA)
+- Feature engineering and selection
+- Correlation analysis
+- Data visualization
+- Training multiple regression models
+- Model comparison and evaluation
 
 ---
 
@@ -21,50 +23,56 @@ This project focuses on detecting fraudulent credit card transactions using mach
 - Python
 - Pandas
 - NumPy
-- Scikit-learn
-- TensorFlow
-- CVXOPT
-- LIBSVM
 - Matplotlib
-- Google Colab / Jupyter Notebook
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook / Google Colab
 
 ---
 
 ## 📂 Dataset
-**Dataset:** `Modified_CreditCardData.csv`
+**Dataset:** `House_Price_India.csv`
 
-The dataset contains customer and transaction information used to classify whether a transaction is fraudulent or legitimate.
+The dataset contains various property-related features such as:
+- Number of bedrooms
+- Number of bathrooms
+- Area (sq. ft.)
+- Number of floors
+- Location
+- Furnishing status
+- Age of the property
+- Parking availability
+- Selling price (Target Variable)
 
 ---
 
 ## 🤖 Machine Learning Models
-The notebook implements the following models:
+The project evaluates multiple regression algorithms, including:
 
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Decision Tree Classifier
-- Random Forest Classifier
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor *(optional if implemented)*
 
 ---
 
 ## 📊 Evaluation Metrics
-The models are evaluated using:
+The regression models are evaluated using:
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
-- Classification Report
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score (Coefficient of Determination)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Credit-Card-Fraud-Detection/
-│── Maths (1).ipynb
-│── Modified_CreditCardData.csv
+House-Price-Prediction/
+│── House_Price_Prediction.ipynb
+│── House_Price_India.csv
 │── README.md
 ```
 
@@ -75,44 +83,59 @@ Credit-Card-Fraud-Detection/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/credit-card-fraud-detection.git
-cd credit-card-fraud-detection
+git clone https://github.com/yourusername/house-price-prediction.git
+cd house-price-prediction
 ```
 
 Install the required libraries:
 
 ```bash
-pip install pandas numpy scikit-learn tensorflow matplotlib cvxopt
+pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
 ---
 
 ## ▶️ Running the Project
 
-1. Place `Modified_CreditCardData.csv` in the project folder.
-2. Open `Maths (1).ipynb` using Jupyter Notebook or Google Colab.
-3. Run all cells sequentially.
-4. View the model evaluation results.
+1. Download the dataset (`House_Price_India.csv`).
+2. Place the dataset in the project directory.
+3. Open the notebook using Jupyter Notebook or Google Colab.
+4. Run all notebook cells sequentially.
+5. Analyze the evaluation metrics and predicted house prices.
+
+---
+
+## 📈 Workflow
+
+1. Import libraries
+2. Load dataset
+3. Data preprocessing
+4. Exploratory Data Analysis (EDA)
+5. Feature engineering
+6. Feature selection
+7. Train-test split
+8. Model training
+9. Performance evaluation
+10. House price prediction
 
 ---
 
 ## 🎯 Objectives
 
-- Detect fraudulent credit card transactions.
-- Compare multiple machine learning algorithms.
-- Improve fraud detection accuracy.
-- Analyze model performance using standard classification metrics.
+- Predict residential property prices accurately.
+- Compare different regression algorithms.
+- Identify the most influential housing features.
+- Improve prediction performance through feature engineering and model tuning.
 
 ---
 
 ## 📈 Future Enhancements
 
-- Handle class imbalance using SMOTE.
-- Hyperparameter tuning.
-- Deep Learning models.
-- XGBoost and LightGBM implementation.
-- Deploy as a Flask/FastAPI web application.
-- Real-time fraud detection system.
+- Hyperparameter optimization using GridSearchCV.
+- Cross-validation for robust evaluation.
+- Deployment using Flask or FastAPI.
+- Interactive web application using Streamlit.
+- Integration with real-time real estate datasets.
 
 ---
 
