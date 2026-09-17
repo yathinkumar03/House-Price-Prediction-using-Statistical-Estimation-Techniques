@@ -142,6 +142,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 ## 👨‍💻 Author
 
 **Yathin Kumar**  
+**K Jayanth Reddy**
 B.Tech – Artificial Intelligence & Data Science  
 Amrita Vishwa Vidyapeetham
 
